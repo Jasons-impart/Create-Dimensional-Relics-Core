@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "delight:item/space_alloyed_suit_2.png"
+  }
+}
