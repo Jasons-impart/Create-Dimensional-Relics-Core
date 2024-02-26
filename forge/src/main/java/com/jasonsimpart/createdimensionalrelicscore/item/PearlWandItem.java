@@ -1,6 +1,6 @@
-package com.jasonsimpart.createdelightcore.item;
+package com.jasonsimpart.createdimensionalrelicscore.item;
 
-import com.jasonsimpart.createdelightcore.tab.CreativeTab;
+import com.jasonsimpart.createdimensionalrelicscore.tab.CreativeTab;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;

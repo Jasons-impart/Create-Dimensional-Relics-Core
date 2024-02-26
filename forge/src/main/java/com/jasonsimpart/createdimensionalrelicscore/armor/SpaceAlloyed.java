@@ -1,6 +1,6 @@
-package com.jasonsimpart.createdelightcore.armor;
+package com.jasonsimpart.createdimensionalrelicscore.armor;
 
-import com.jasonsimpart.createdelightcore.CreateDelightCore;
+import com.jasonsimpart.createdimensionalrelicscore.CreateDimensionalRelicsCore;
 import earth.terrarium.ad_astra.common.config.SpaceSuitConfig;
 import earth.terrarium.ad_astra.common.item.armor.JetSuit;
 import earth.terrarium.ad_astra.common.util.ModKeyBindings;
@@ -105,6 +105,6 @@ public class SpaceAlloyed extends JetSuit{
     }
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-        return new ResourceLocation(CreateDelightCore.MODID, "textures/item/space_alloyed_suit.png").toString();
+        return new ResourceLocation(CreateDimensionalRelicsCore.MODID, "textures/item/space_alloyed_suit.png").toString();
     }
 }

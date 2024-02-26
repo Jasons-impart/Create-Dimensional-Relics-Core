@@ -1,4 +1,4 @@
-package com.jasonsimpart.createdelightcore.tab;
+package com.jasonsimpart.createdimensionalrelicscore.tab;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;

@@ -1,6 +1,6 @@
-package com.jasonsimpart.createdelightcore.register;
+package com.jasonsimpart.createdimensionalrelicscore.registry;
 
-import com.jasonsimpart.createdelightcore.armor.SpaceAlloyedModel;
+import com.jasonsimpart.createdimensionalrelicscore.armor.SpaceAlloyedModel;
 import earth.terrarium.ad_astra.client.registry.ClientModEntities;
 
 public class Layers {

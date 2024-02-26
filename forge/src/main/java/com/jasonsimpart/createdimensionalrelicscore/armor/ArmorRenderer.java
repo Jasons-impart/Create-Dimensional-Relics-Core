@@ -1,7 +1,6 @@
-package com.jasonsimpart.createdelightcore.armor;
+package com.jasonsimpart.createdimensionalrelicscore.armor;
 
-import com.jasonsimpart.createdelightcore.CreateDelightCore;
-import com.jasonsimpart.createdelightcore.registry.ItemRegistries;
+import com.jasonsimpart.createdimensionalrelicscore.registry.ItemRegistries;
 import earth.terrarium.ad_astra.client.renderer.armor.ArmourRenderers;
 import earth.terrarium.ad_astra.client.renderer.armor.SpaceSuitModel;
 import net.minecraft.client.Minecraft;

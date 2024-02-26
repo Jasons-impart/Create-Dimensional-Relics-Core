@@ -1,6 +1,6 @@
-package com.jasonsimpart.createdelightcore.armor;
+package com.jasonsimpart.createdimensionalrelicscore.armor;
 
-import com.jasonsimpart.createdelightcore.CreateDelightCore;
+import com.jasonsimpart.createdimensionalrelicscore.CreateDimensionalRelicsCore;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -13,7 +13,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.function.Supplier;
 
 public enum BaseArmorMaterial implements ArmorMaterial {
-    BASE_ARMOR(CreateDelightCore.MODID + "base_armor", 3169, new int[]{2, 8, 10, 2}, 15, SoundEvents.ARMOR_EQUIP_GOLD, 100.0f,
+    BASE_ARMOR(CreateDimensionalRelicsCore.MODID + "base_armor", 3169, new int[]{2, 8, 10, 2}, 15, SoundEvents.ARMOR_EQUIP_GOLD, 100.0f,
             () -> {return Ingredient.of(Items.NETHERITE_INGOT);}, 0);
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{11, 16, 15, 13};//基础耐久(头，腿，胸，脚)
     private final String name;

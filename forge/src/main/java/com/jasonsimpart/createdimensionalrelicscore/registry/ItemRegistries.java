@@ -1,10 +1,10 @@
-package com.jasonsimpart.createdelightcore.registry;
+package com.jasonsimpart.createdimensionalrelicscore.registry;
 
-import com.jasonsimpart.createdelightcore.item.PearlWandItem;
-import com.jasonsimpart.createdelightcore.CreateDelightCore;
-import com.jasonsimpart.createdelightcore.armor.BaseArmorMaterial;
-import com.jasonsimpart.createdelightcore.armor.SpaceAlloyed;
-import com.jasonsimpart.createdelightcore.tab.CreativeTab;
+import com.jasonsimpart.createdimensionalrelicscore.item.PearlWandItem;
+import com.jasonsimpart.createdimensionalrelicscore.CreateDimensionalRelicsCore;
+import com.jasonsimpart.createdimensionalrelicscore.armor.BaseArmorMaterial;
+import com.jasonsimpart.createdimensionalrelicscore.armor.SpaceAlloyed;
+import com.jasonsimpart.createdimensionalrelicscore.tab.CreativeTab;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -13,7 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ItemRegistries {
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CreateDelightCore.MODID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, CreateDimensionalRelicsCore.MODID);
 
     // Space Alloyed Suit
     public static final RegistryObject<Item> SPACE_ALLOYED_HELMET = ITEMS.register("space_alloyed_helmet", () -> new SpaceAlloyed(BaseArmorMaterial.BASE_ARMOR, EquipmentSlot.HEAD, new Item.Properties().tab(CreativeTab.DELIGHT_TAB).fireResistant()));

@@ -1,10 +1,10 @@
-package com.jasonsimpart.createdelightcore;
+package com.jasonsimpart.createdimensionalrelicscore;
 
 
-import com.jasonsimpart.createdelightcore.client.Client;
-import com.jasonsimpart.createdelightcore.register.Layers;
+import com.jasonsimpart.createdimensionalrelicscore.client.Client;
+import com.jasonsimpart.createdimensionalrelicscore.registry.Layers;
 
-import com.jasonsimpart.createdelightcore.registry.ItemRegistries;
+import com.jasonsimpart.createdimensionalrelicscore.registry.ItemRegistries;
 import earth.terrarium.ad_astra.client.registry.ClientModEntities;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
@@ -15,17 +15,17 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 import java.util.function.Supplier;
 
-@Mod(CreateDelightCore.MODID)
-public class CreateDelightCore
+@Mod(CreateDimensionalRelicsCore.MODID)
+public class CreateDimensionalRelicsCore
 {
-	public static final String MODID = "createdelightcore";
-	public CreateDelightCore() {
+	public static final String MODID = "createdimensionalrelicscore";
+	public CreateDimensionalRelicsCore() {
 		var bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		ItemRegistries.register(bus);
 
-		bus.addListener(CreateDelightCore::onClientSetup);
-		bus.addListener(CreateDelightCore::onRegisterLayerDefinitions);
+		bus.addListener(CreateDimensionalRelicsCore::onClientSetup);
+		bus.addListener(CreateDimensionalRelicsCore::onRegisterLayerDefinitions);
 	}
 
 	public static void onClientSetup(FMLClientSetupEvent event)
