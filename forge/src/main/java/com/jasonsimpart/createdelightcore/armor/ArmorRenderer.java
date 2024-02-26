@@ -1,22 +1,19 @@
-package com.delight.tool.armor;
+package com.jasonsimpart.createdelightcore.armor;
 
-import com.delight.tool.CreateDelight;
+import com.jasonsimpart.createdelightcore.CreateDelightCore;
+import com.jasonsimpart.createdelightcore.registry.ItemRegistries;
 import earth.terrarium.ad_astra.client.renderer.armor.ArmourRenderers;
 import earth.terrarium.ad_astra.client.renderer.armor.SpaceSuitModel;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.geom.EntityModelSet;
-import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelPart;
-import net.minecraft.resources.ResourceLocation;
 
 public class ArmorRenderer extends ArmourRenderers{
-
-
     public static void init(){
         ArmourRenderers.registerArmour((entity, stack, slot, original) -> {
             EntityModelSet modelLoader = Minecraft.getInstance().getEntityModels();
             ModelPart layer = modelLoader.bakeLayer(SpaceAlloyedModel.SPACE_ALLOYED_LAYER);
             return new SpaceSuitModel(layer, original, entity, slot, stack);
-        }, CreateDelight.SPACE_ALLOYED_HELMET.get(), CreateDelight.SPACE_ALLOYED.get(), CreateDelight.SPACE_ALLOYED_PANTS.get(), CreateDelight.SPACE_ALLOYED_BOOTS.get());
+        }, ItemRegistries.SPACE_ALLOYED_HELMET.get(), ItemRegistries.SPACE_ALLOYED.get(), ItemRegistries.SPACE_ALLOYED_PANTS.get(), ItemRegistries.SPACE_ALLOYED_BOOTS.get());
      }
 }

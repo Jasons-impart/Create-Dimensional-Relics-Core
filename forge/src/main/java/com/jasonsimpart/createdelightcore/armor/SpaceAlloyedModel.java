@@ -1,6 +1,6 @@
-package com.delight.tool.armor;
+package com.jasonsimpart.createdelightcore.armor;
 
-import com.delight.tool.CreateDelight;
+import com.jasonsimpart.createdelightcore.CreateDelightCore;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.PartNames;
 import net.minecraft.client.model.geom.PartPose;
@@ -8,7 +8,7 @@ import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 
 public class SpaceAlloyedModel {
-    public static final ModelLayerLocation SPACE_ALLOYED_LAYER = new ModelLayerLocation(new ResourceLocation(CreateDelight.MOD_ID, "space_alloyed_sult"), "main");
+    public static final ModelLayerLocation SPACE_ALLOYED_LAYER = new ModelLayerLocation(new ResourceLocation(CreateDelightCore.MODID, "space_alloyed_sult"), "main");
 
     @SuppressWarnings("unused")
     public static LayerDefinition createBodyLayer() {

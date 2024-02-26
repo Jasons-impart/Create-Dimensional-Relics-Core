@@ -1,7 +1,6 @@
-package com.delight.tool.register;
+package com.jasonsimpart.createdelightcore.register;
 
-import com.delight.tool.armor.ArmorRenderer;
-import com.delight.tool.armor.SpaceAlloyedModel;
+import com.jasonsimpart.createdelightcore.armor.SpaceAlloyedModel;
 import earth.terrarium.ad_astra.client.registry.ClientModEntities;
 
 public class Layers {

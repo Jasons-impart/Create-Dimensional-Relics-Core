@@ -1,18 +1,12 @@
-package com.delight.tool.armor;
+package com.jasonsimpart.createdelightcore.armor;
 
-import com.delight.tool.CreateDelight;
-import earth.terrarium.ad_astra.AdAstra;
+import com.jasonsimpart.createdelightcore.CreateDelightCore;
 import earth.terrarium.ad_astra.common.config.SpaceSuitConfig;
 import earth.terrarium.ad_astra.common.item.armor.JetSuit;
-import earth.terrarium.ad_astra.common.registry.ModItems;
 import earth.terrarium.ad_astra.common.util.ModKeyBindings;
 import earth.terrarium.ad_astra.common.util.ModUtils;
 import earth.terrarium.botarium.api.energy.EnergyHooks;
-import earth.terrarium.botarium.api.fluid.FluidHooks;
 import earth.terrarium.botarium.api.item.ItemStackHolder;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.Style;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
@@ -20,14 +14,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.registries.ObjectHolder;
-
-import java.util.List;
-
-import static com.delight.tool.CreateDelight.SPACE_ALLOYED;
 
 public class SpaceAlloyed extends JetSuit{
     private boolean isFallFlying;
@@ -118,6 +105,6 @@ public class SpaceAlloyed extends JetSuit{
     }
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-        return new ResourceLocation(CreateDelight.MOD_ID, "textures/item/space_alloyed_suit.png").toString();
+        return new ResourceLocation(CreateDelightCore.MODID, "textures/item/space_alloyed_suit.png").toString();
     }
 }

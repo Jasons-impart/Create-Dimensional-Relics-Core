@@ -1,4 +1,4 @@
-package com.delight.tool.tab;
+package com.jasonsimpart.createdelightcore.tab;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
