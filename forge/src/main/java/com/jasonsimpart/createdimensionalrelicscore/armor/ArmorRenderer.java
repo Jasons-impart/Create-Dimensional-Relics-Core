@@ -11,8 +11,8 @@ public class ArmorRenderer extends ArmourRenderers{
     public static void init(){
         ArmourRenderers.registerArmour((entity, stack, slot, original) -> {
             EntityModelSet modelLoader = Minecraft.getInstance().getEntityModels();
-            ModelPart layer = modelLoader.bakeLayer(SpaceAlloyedModel.SPACE_ALLOYED_LAYER);
+            ModelPart layer = modelLoader.bakeLayer(SpaceAlloyModel.SPACE_ALLOY_LAYER);
             return new SpaceSuitModel(layer, original, entity, slot, stack);
-        }, ItemRegistries.SPACE_ALLOYED_HELMET.get(), ItemRegistries.SPACE_ALLOYED.get(), ItemRegistries.SPACE_ALLOYED_PANTS.get(), ItemRegistries.SPACE_ALLOYED_BOOTS.get());
+        }, ItemRegistries.SPACE_ALLOY_HELMET.get(), ItemRegistries.SPACE_ALLOY_CHESTPLATE.get(), ItemRegistries.SPACE_ALLOYED_LEGGINGS.get(), ItemRegistries.SPACE_ALLOYED_BOOTS.get());
      }
 }

@@ -1,3 +1,8 @@
 {
-  "itemGroup.create_dimensional_relics_tab": "机械动力："
+  "itemGroup.create_dimensional_relics_tab": "机械动力：薪尽火传",
+  "item.createdimensionalrelicscore.space_alloy_helmet": "太空合金头盔",
+  "item.createdimensionalrelicscore.space_alloy_chestplate": "太空合金胸甲",
+  "item.createdimensionalrelicscore.space_alloy_leggings": "太空合金护腿",
+  "item.createdimensionalrelicscore.space_alloy_boots": "太空合金靴子",
+  "item.createdimensionalrelicscore.pearl_wand": "C_Pearl的珍珠手杖"
 }

@@ -6,12 +6,16 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.context.UseOnContext;
 import org.jetbrains.annotations.NotNull;
 
 public class PearlWandItem extends Item {
     public PearlWandItem() {
-        super(new Properties().tab(CreativeTab.DELIGHT_TAB).fireResistant());
+        super(new Properties()
+                .tab(CreativeTab.CREATE_DIMENSIONAL_RELICS_TAB)
+                .fireResistant()
+                .rarity(Rarity.EPIC));
     }
 
     @Override

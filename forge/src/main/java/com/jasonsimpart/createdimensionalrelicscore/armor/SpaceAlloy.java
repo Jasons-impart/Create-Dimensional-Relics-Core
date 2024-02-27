@@ -16,10 +16,10 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
 
-public class SpaceAlloyed extends JetSuit{
+public class SpaceAlloy extends JetSuit {
     private boolean isFallFlying;
     private boolean emitParticles;
-    public SpaceAlloyed(ArmorMaterial material, EquipmentSlot slot, Properties properties) {
+    public SpaceAlloy(ArmorMaterial material, EquipmentSlot slot, Properties properties) {
         super(material, slot, properties);
     }
 
@@ -28,6 +28,7 @@ public class SpaceAlloyed extends JetSuit{
     {
         emitParticles = false;
         ItemStackHolder stackHolder = new ItemStackHolder(stack);
+
         //创造不启用
         if (player.getAbilities().flying) {
             return;
@@ -105,6 +106,6 @@ public class SpaceAlloyed extends JetSuit{
     }
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-        return new ResourceLocation(CreateDimensionalRelicsCore.MODID, "textures/item/space_alloyed_suit.png").toString();
+        return new ResourceLocation(CreateDimensionalRelicsCore.MODID, "textures/item/space_alloy_chestplate.png").toString();
     }
 }

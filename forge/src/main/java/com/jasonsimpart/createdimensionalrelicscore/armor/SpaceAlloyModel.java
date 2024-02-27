@@ -7,8 +7,8 @@ import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 
-public class SpaceAlloyedModel {
-    public static final ModelLayerLocation SPACE_ALLOYED_LAYER = new ModelLayerLocation(new ResourceLocation(CreateDimensionalRelicsCore.MODID, "space_alloyed_sult"), "main");
+public class SpaceAlloyModel {
+    public static final ModelLayerLocation SPACE_ALLOY_LAYER = new ModelLayerLocation(new ResourceLocation(CreateDimensionalRelicsCore.MODID, "space_alloy_chestplate"), "main");
 
     @SuppressWarnings("unused")
     public static LayerDefinition createBodyLayer() {
