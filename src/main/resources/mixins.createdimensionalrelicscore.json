@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "com.jasonsimpart.createdimensionalrelicscore.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "mixins.createdimensionalrelicscore.refmap.json",
+  "mixins": [],
+  "client": [],
+  "minVersion": "0.8"
+}
