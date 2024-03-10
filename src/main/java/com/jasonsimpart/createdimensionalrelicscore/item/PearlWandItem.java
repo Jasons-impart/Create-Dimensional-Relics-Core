@@ -18,7 +18,6 @@ public class PearlWandItem extends Item {
                 .tab(CreativeTab.CREATE_DIMENSIONAL_RELICS_TAB)
                 .fireResistant()
                 .rarity(Rarity.EPIC));
-        BlockEvent.CropGrowEvent
     }
 
     @Override

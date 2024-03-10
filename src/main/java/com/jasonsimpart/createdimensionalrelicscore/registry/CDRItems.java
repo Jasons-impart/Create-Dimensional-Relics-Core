@@ -1,5 +1,6 @@
 package com.jasonsimpart.createdimensionalrelicscore.registry;
 
+import com.jasonsimpart.createdimensionalrelicscore.item.IngotItem;
 import com.jasonsimpart.createdimensionalrelicscore.item.PearlWandItem;
 import com.jasonsimpart.createdimensionalrelicscore.CreateDimensionalRelicsCore;
 import com.jasonsimpart.createdimensionalrelicscore.armor.BaseArmorMaterial;
@@ -25,6 +26,12 @@ public class CDRItems {
     public static final RegistryObject<Item> SPACE_ALLOY_CHESTPLATE = ITEMS.register("space_alloy_chestplate", () -> new SpaceAlloy(BaseArmorMaterial.BASE_ARMOR, EquipmentSlot.CHEST, SPACE_ALLOY_PROPERTIES));
     public static final RegistryObject<Item> SPACE_ALLOYED_LEGGINGS = ITEMS.register("space_alloy_leggings", () -> new SpaceAlloy(BaseArmorMaterial.BASE_ARMOR, EquipmentSlot.LEGS, SPACE_ALLOY_PROPERTIES));
     public static final RegistryObject<Item> SPACE_ALLOYED_BOOTS = ITEMS.register("space_alloy_boots", () -> new SpaceAlloy(BaseArmorMaterial.BASE_ARMOR, EquipmentSlot.FEET, SPACE_ALLOY_PROPERTIES));
+
+    // ingots
+    public static final RegistryObject<Item> OVERCHARGED_REDSTONE = ITEMS.register("overcharged_redstone", IngotItem::new);
+    public static final RegistryObject<Item> SPACE_ALLOY_INGOT = ITEMS.register("space_alloy_ingot", IngotItem::new);
+    public static final RegistryObject<Item> SPACE_ALLOY_NUGGET = ITEMS.register("space_alloy_nugget", IngotItem::new);
+    public static final RegistryObject<Item> SPACE_ALLOY_SHEET = ITEMS.register("space_alloy_sheet", IngotItem::new);
 
     // Developer's Items
     public static final RegistryObject<Item> PEARL_WAND = ITEMS.register("pearl_wand", PearlWandItem::new);
