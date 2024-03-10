@@ -8,6 +8,8 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.level.block.CropBlock;
+import net.minecraftforge.event.level.BlockEvent;
 import org.jetbrains.annotations.NotNull;
 
 public class PearlWandItem extends Item {
@@ -16,6 +18,7 @@ public class PearlWandItem extends Item {
                 .tab(CreativeTab.CREATE_DIMENSIONAL_RELICS_TAB)
                 .fireResistant()
                 .rarity(Rarity.EPIC));
+        BlockEvent.CropGrowEvent
     }
 
     @Override

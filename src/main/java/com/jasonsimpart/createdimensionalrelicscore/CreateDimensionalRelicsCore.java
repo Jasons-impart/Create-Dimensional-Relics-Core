@@ -4,7 +4,8 @@ package com.jasonsimpart.createdimensionalrelicscore;
 import com.jasonsimpart.createdimensionalrelicscore.client.Client;
 import com.jasonsimpart.createdimensionalrelicscore.registry.Layers;
 
-import com.jasonsimpart.createdimensionalrelicscore.registry.ItemRegistries;
+import com.jasonsimpart.createdimensionalrelicscore.registry.CDRItems;
+import com.mojang.logging.LogUtils;
 import earth.terrarium.ad_astra.client.registry.ClientModEntities;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.builders.LayerDefinition;
@@ -12,6 +13,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.slf4j.Logger;
 
 import java.util.function.Supplier;
 
@@ -19,10 +21,11 @@ import java.util.function.Supplier;
 public class CreateDimensionalRelicsCore
 {
 	public static final String MODID = "createdimensionalrelicscore";
+	public static final Logger LOGGER = LogUtils.getLogger();
 	public CreateDimensionalRelicsCore() {
 		var bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-		ItemRegistries.register(bus);
+		CDRItems.register(bus);
 
 		bus.addListener(CreateDimensionalRelicsCore::onClientSetup);
 		bus.addListener(CreateDimensionalRelicsCore::onRegisterLayerDefinitions);

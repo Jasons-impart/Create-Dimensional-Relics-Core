@@ -1,6 +1,6 @@
 package com.jasonsimpart.createdimensionalrelicscore.armor;
 
-import com.jasonsimpart.createdimensionalrelicscore.registry.ItemRegistries;
+import com.jasonsimpart.createdimensionalrelicscore.registry.CDRItems;
 import earth.terrarium.ad_astra.client.renderer.armor.ArmourRenderers;
 import earth.terrarium.ad_astra.client.renderer.armor.SpaceSuitModel;
 import net.minecraft.client.Minecraft;
@@ -13,6 +13,6 @@ public class ArmorRenderer extends ArmourRenderers{
             EntityModelSet modelLoader = Minecraft.getInstance().getEntityModels();
             ModelPart layer = modelLoader.bakeLayer(SpaceAlloyModel.SPACE_ALLOY_LAYER);
             return new SpaceSuitModel(layer, original, entity, slot, stack);
-        }, ItemRegistries.SPACE_ALLOY_HELMET.get(), ItemRegistries.SPACE_ALLOY_CHESTPLATE.get(), ItemRegistries.SPACE_ALLOYED_LEGGINGS.get(), ItemRegistries.SPACE_ALLOYED_BOOTS.get());
+        }, CDRItems.SPACE_ALLOY_HELMET.get(), CDRItems.SPACE_ALLOY_CHESTPLATE.get(), CDRItems.SPACE_ALLOYED_LEGGINGS.get(), CDRItems.SPACE_ALLOYED_BOOTS.get());
      }
 }
