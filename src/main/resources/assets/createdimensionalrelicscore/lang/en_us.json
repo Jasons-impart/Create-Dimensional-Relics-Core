@@ -4,5 +4,10 @@
   "item.createdimensionalrelicscore.space_alloy_chestplate": "Space Alloy Chestplate",
   "item.createdimensionalrelicscore.space_alloy_leggings": "Space Alloy Leggings",
   "item.createdimensionalrelicscore.space_alloy_boots": "Space Alloy Boots",
-  "item.createdimensionalrelicscore.pearl_wand": "C_Pearl's Pearl Wand"
+  "item.createdimensionalrelicscore.pearl_wand": "C_Pearl's Pearl Wand",
+  "item.createdimensionalrelicscore.overcharged_redstone": "overcharged redstone",
+  "item.createdimensionalrelicscore.space_alloy_ingot": "space_alloy ingot",
+  "item.createdimensionalrelicscore.space_alloy_nugget": "space alloy nugget",
+  "item.createdimensionalrelicscore.space_alloy_sheet": "space alloy sheet"
 }
+
