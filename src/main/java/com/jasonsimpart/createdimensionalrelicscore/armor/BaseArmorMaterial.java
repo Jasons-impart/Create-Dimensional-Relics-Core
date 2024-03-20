@@ -1,6 +1,7 @@
 package com.jasonsimpart.createdimensionalrelicscore.armor;
 
 import com.jasonsimpart.createdimensionalrelicscore.CreateDimensionalRelicsCore;
+import com.jasonsimpart.createdimensionalrelicscore.registry.CDRItems;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
@@ -15,7 +16,7 @@ import java.util.function.Supplier;
 
 public enum BaseArmorMaterial implements ArmorMaterial {
     BASE_ARMOR(CreateDimensionalRelicsCore.MODID + "base_armor", 3169, new int[]{2, 8, 10, 2}, 15, SoundEvents.ARMOR_EQUIP_GOLD, 100.0f,
-            () -> {return Ingredient.of(Items.NETHERITE_INGOT);}, 0);
+            () -> {return Ingredient.of(CDRItems.SPACE_ALLOY_INGOT.get());}, 0);
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{11, 16, 15, 13};//基础耐久(头，腿，胸，脚)
     private final String name;
     private final int maxDamageFactor;//耐久倍数（总耐久 = 耐久倍速 * 基础耐久）
