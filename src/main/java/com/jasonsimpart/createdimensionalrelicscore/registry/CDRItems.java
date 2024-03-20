@@ -7,8 +7,11 @@ import com.jasonsimpart.createdimensionalrelicscore.armor.BaseArmorMaterial;
 import com.jasonsimpart.createdimensionalrelicscore.armor.SpaceAlloy;
 import com.jasonsimpart.createdimensionalrelicscore.tab.CreativeTab;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -35,6 +38,10 @@ public class CDRItems {
 
     // Developer's Items
     public static final RegistryObject<Item> PEARL_WAND = ITEMS.register("pearl_wand", PearlWandItem::new);
+
+    // Crops
+    public static final RegistryObject<Item> DRY_WHEAT_SEEDS = ITEMS.register("dry_wheat_seeds", () -> new ItemNameBlockItem(CDRBlocks.FUEL_PLANT.get(), new Item.Properties().tab(CreativeTab.CREATE_DIMENSIONAL_RELICS_TAB)));
+    public static final RegistryObject<Item> DRY_WHEAT = ITEMS.register("dry_wheat", () -> new Item(new Item.Properties().tab(CreativeTab.CREATE_DIMENSIONAL_RELICS_TAB)));
 
     public static void register(IEventBus bus) {
         ITEMS.register(bus);

@@ -8,5 +8,7 @@
   "item.createdimensionalrelicscore.overcharged_redstone": "充能红石",
   "item.createdimensionalrelicscore.space_alloy_ingot": "太空合金锭",
   "item.createdimensionalrelicscore.space_alloy_nugget": "太空合金粒",
-  "item.createdimensionalrelicscore.space_alloy_sheet": "太空合金板"
+  "item.createdimensionalrelicscore.space_alloy_sheet": "太空合金板",
+  "item.createdimensionalrelicscore.dry_wheat_seeds": "旱麦种子",
+  "item.createdimensionalrelicscore.dry_wheat": "旱麦"
 }

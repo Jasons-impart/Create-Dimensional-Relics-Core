@@ -2,6 +2,7 @@ package com.jasonsimpart.createdimensionalrelicscore;
 
 
 import com.jasonsimpart.createdimensionalrelicscore.client.Client;
+import com.jasonsimpart.createdimensionalrelicscore.registry.CDRBlocks;
 import com.jasonsimpart.createdimensionalrelicscore.registry.Layers;
 
 import com.jasonsimpart.createdimensionalrelicscore.registry.CDRItems;
@@ -26,6 +27,7 @@ public class CreateDimensionalRelicsCore
 		var bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		CDRItems.register(bus);
+		CDRBlocks.register(bus);
 
 		bus.addListener(CreateDimensionalRelicsCore::onClientSetup);
 		bus.addListener(CreateDimensionalRelicsCore::onRegisterLayerDefinitions);

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "createdimensionalrelicscore:block/dry_wheat_stage1"
+  },
+  "render_type": "cutout"
+}

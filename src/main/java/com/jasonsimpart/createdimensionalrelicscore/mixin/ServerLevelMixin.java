@@ -15,8 +15,10 @@ public abstract class ServerLevelMixin {
 
     @Inject(method = "tickTime", at = @At(value = "RETURN"))
     public void setTime(CallbackInfo ci) {
+        /*
         var self = (ServerLevel) (Object) this;
         if (self.dimension().equals(Level.OVERWORLD))
             setDayTime(self.getLevelData().getDayTime() + 1L);
+         */
     }
 }
