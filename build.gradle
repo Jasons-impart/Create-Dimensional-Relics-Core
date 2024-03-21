@@ -132,6 +132,13 @@ repositories {
         name = "ModMaven"
         url = "https://modmaven.dev"
     }
+    maven {
+        // Shedaniel's maven (Architectury API)
+        url = "https://maven.architectury.dev"
+        content {
+            includeGroup "dev.architectury"
+        }
+    }
 }
 
 dependencies {
@@ -150,6 +157,11 @@ dependencies {
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
     compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
     runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
+
+    // FTBE
+    implementation fg.deobf("dev.architectury:architectury-forge:6.6.92")
+    implementation fg.deobf("curse.maven:ftb-library-forge-404465:4661834")
+    implementation fg.deobf("curse.maven:ftb-essentials-forge-410811:5120109")
 }
 
 mixin {
